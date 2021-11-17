@@ -1,0 +1,74 @@
+@import '../../styles/typography.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 7px 0;
+  background-color: transparent;
+  border-radius: 7px;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  transition: color 0.5s linear;
+  cursor: pointer;
+
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    &--icon {
+      right: 2px;
+      top: 0;
+    }
+  }
+
+  &--primary {
+    padding: 8px;
+    background-color: $primary;
+
+    &:hover, &--dis {
+      background-color: $primaryDisabled;
+    }
+  }
+
+  &--secondary {
+    padding: 12px 40px;
+    background-color: $secondary;
+    color: black;
+    font-size: 14px;
+
+    &:hover, &--dis {
+      background-color: $secondaryDisabled;
+    }
+  }
+
+  &--active {
+    background-color: $secondaryDisabled;
+    color: white;
+  }
+
+  &--category {
+    background-color: $lightDisabled;
+    border: 1px solid $light;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow:  1px 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+    &:focus {
+      box-shadow: 0 0 10px #c8c8c8, inset 0 2px 1px white;
+    }
+  }
+
+  &--favorite {
+    color: $secondary;
+    
+    &--active {
+      color: $primary;
+    }
+
+    &:hover :active {
+      color: $secondary;
+    }
+  }
+}

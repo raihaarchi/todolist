@@ -1,0 +1,59 @@
+@import '../../styles/typography.scss';
+@import '../../styles/breakpoint.scss';
+
+.Header {
+  position: sticky;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: $primaryDark;
+  min-height: 50px;
+  z-index: 4;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    padding: 0 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  &__input {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__content-right {
+    display: flex;
+    width: 50%;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+
+    &:hover {
+      color: $light;
+    }
+  }
+
+  &__loader {
+    background-color: $light;
+    width: 100%;
+
+    &--hide {
+      height: 4px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.Modal-create {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+
+  &__input {
+    border: 1px solid red;
+  }
+  &__pickter {
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+  }
+  &__button {
+    margin-top: 20px;
+  }
+}

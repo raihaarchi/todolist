@@ -1,0 +1,62 @@
+@import '../../styles/typography.scss';
+
+.Checkbox {
+  display: flex;
+  flex-direction: column;
+  color: #6f6f6f;
+
+  &__switch {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    margin: 8px 0;
+  }
+
+  &__heading {
+    width: 110px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input:checked+&__slider {
+    background-color: $secondary;
+
+    &:before {
+      transform: translateX(26px);
+    }
+  }
+
+  &__input:focus+&__slider {
+    box-shadow: 0 0 1px $secondary;
+  }
+
+  &__slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: $light;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  &__slider:before {
+    position: absolute;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    bottom: 2px;
+    left: 1px;
+    transition: 0.4s;
+    content: '';
+  }
+
+  &__slider.Checkbox__round {
+    border-radius: 34px;
+
+    &:before {
+      border-radius: 50%;
+    }
+  }
+}

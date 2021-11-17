@@ -1,0 +1,110 @@
+{
+  "tasks": [
+  {
+  "title": "купить молока",
+  "active": false,
+  "favorite": true,
+  "iconId": 3,
+  "dateOfCreat": "2016-09-15",
+  "id": 1
+  },
+  {
+  "title": "Купить хлебушек",
+  "active": false,
+  "favorite": false,
+  "iconId": 2,
+  "dateOfCreat": "2020-09-18",
+  "id": 2
+  },
+  {
+  "title": "123",
+  "active": false,
+  "favorite": false,
+  "iconId": 2,
+  "dateOfCreat": "2020-10-01",
+  "id": 4
+  }
+  ],
+  "icons": [
+  {
+  "id": 1,
+  "name": "calendar",
+  "color": "#0047ab",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 2,
+  "name": "important",
+  "color": "#ffb854",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M12 2.02c-5.51 0-9.98 4.47-9.98 9.98s4.47 9.98 9.98 9.98 9.98-4.47 9.98-9.98S17.51 2.02 12 2.02zM11.48 20v-6.26H8L13 4v6.26h3.35L11.48 20z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 3,
+  "name": "123",
+  "color": "#d53e07",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M14 6l-1-2H5v17h2v-7h5l1 2h7V6h-6zm4 8h-4l-1-2H7V6h5l1 2h5v6z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 4,
+  "name": "person",
+  "color": "#a000a0",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 5,
+  "name": "food",
+  "color": "#0047ab",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 8,
+  "name": "bell",
+  "color": "#d53e07",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24' ><path d='M0 0h24v24H0z' fill='none'></path><path d='M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 6,
+  "name": "123",
+  "color": "#6f6f6f",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0V0z' fill='none'></path><path d='M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "id": 7,
+  "name": "message",
+  "color": "#6f6f6f",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z'></path></svg>",
+  "default": true,
+  "delete": false
+  },
+  {
+  "id": 9,
+  "name": "art",
+  "color": "#6f6f6f",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0z' fill='none'></path><path d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z'></path></svg>",
+  "default": false,
+  "delete": false
+  },
+  {
+  "name": "время",
+  "color": "#b8e986",
+  "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M0 0h24v24H0V0z' fill='none'></path><path d='M12.5 8H11v6l4.75 2.85.75-1.23-4-2.37zm4.837-6.19l4.607 3.845-1.28 1.535-4.61-3.843zm-10.674 0l1.282 1.536L3.337 7.19l-1.28-1.536zM12 4c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z'></path></svg>",
+  "default": false,
+  "delete": true,
+  "id": 10
+  }
+  ]
+  }

@@ -1,0 +1,42 @@
+@import './styles/typography.scss';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body, p, h4 {
+  margin: 0;
+  font-family: $fontPrimary;
+  font-size: 16px;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input:focus {
+  outline: none;
+}
+
+.back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  opacity: .2;
+  z-index: 1;
+}
+
+.back--hide {
+  display: none;
+}

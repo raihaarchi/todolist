@@ -1,0 +1,8 @@
+export const SET_STATE = 'SET_STATE';
+export const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
+export const SET_STATE_ADD_TASK = 'SET_STATE_ADD_TASK';
+export const SET_STATE_REMOVE_TASK = 'SET_STATE_REMOVE_TASK';
+export const TASK_LOAD = 'TASK_LOAD';
+export const ADD_TASK_LOAD = 'ADD_TASK_LOAD';
+export const DELETE_TASK_LOAD = 'DELETE_TASK_LOAD';
+export const CHANGE_TASK_LOAD = 'CHANGE_TASK_LOAD';

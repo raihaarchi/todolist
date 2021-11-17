@@ -1,0 +1,12 @@
+@import '../../../styles/typography.scss';
+
+.Filter-input {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &__input {
+    display: flex;
+    color: rgb(111, 111, 111);
+  }
+}

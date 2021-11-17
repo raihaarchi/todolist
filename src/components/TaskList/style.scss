@@ -1,0 +1,38 @@
+.Tasks-list {
+  &__task {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__warning {
+    text-align: center;
+    color: grey;
+  }
+
+  &--animation-exit-active {
+    animation: task 800ms ease-out forwards;
+  }
+
+  &--animation-enter-active {
+    animation: task 800ms ease-in alternate-reverse;
+  }
+}
+
+@keyframes task {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    opacity: .7;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}

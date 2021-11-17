@@ -1,0 +1,132 @@
+@import '../styles/typography.scss';
+
+.Icon-template {
+  position: relative;
+  margin: 0 10px;
+  align-items: center;
+  display: flex;
+  margin: 5px 15px;
+
+  &--row {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &--column {
+    flex-direction: column;
+    width: 72px;
+    height: 60px;
+    padding: 10px;
+    margin: 0;
+
+    &:hover {
+      background-color: $primaryDisabled;
+      border-radius: 10px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    background-color: $lightDisabled;
+    flex-direction: column;
+    border: 1px solid $light;
+    border-radius: 50%;
+    padding: 0;
+
+    &--large {
+      width: 40px;
+      height: 40px;
+      padding: 0 7px;
+      margin: 4px 0 10px;
+    }
+
+    &--column {
+      flex-direction: column;
+      justify-content: space-between;
+
+      &:hover,
+      &:active .Icon-template__name--column {
+        color: black;
+        font-size: 14px;
+      }
+    }
+
+    &--row {
+      padding: 17px;
+    }
+
+    &--small {
+      width: 32px;
+      height: 32px;
+      padding: 0 3px;
+    }
+  }
+
+  &__name {
+    font-family: $fontPrimary;
+
+    &--row {
+      margin: 0 35px;
+      font-size: 16px;
+    }
+
+    &--column {
+      color: $light;
+      font-size: 14px;
+    }
+  }
+}
+
+svg {
+  &.svg--exlarge {
+    height: 70px;
+    width: auto;
+    padding: 10px;
+  }
+  &.icon-favorite {
+    width: 40px;
+    height: 37px;
+    margin-right: 22px;
+  }
+
+  &.icon-pen {
+    width: 20px;
+    color: $light;
+  }
+
+  &.icon-arrow {
+    color: black;
+  }
+
+  &.Icon-check {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    color: transparent;
+    &--completed {
+      color: $secondary;
+    }
+  }
+
+  &.icon-setting {
+    color: white;
+
+    &:hover {
+      color: $light;
+    }
+  }
+
+  &.icon-close {
+    color: $red;
+  }
+}
+
+.Checked-mark {
+  position: relative;
+  width: 180px;
+  margin: 0 10px;
+}
+
+.arrow {
+  width: 45px;
+}

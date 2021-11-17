@@ -1,0 +1,67 @@
+@import '../../styles/typography.scss';
+@import '../../styles/breakpoint.scss';
+
+.Form-task {
+
+  &__form-task-icons {
+    position: absolute;
+    margin-top: 9px;
+    top: 2px;
+  }
+  
+  &__field {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    background-color: transparent;
+    padding: 18px 50px 18px 10px;
+    border: 1px solid $light;
+    border-radius: 7px;
+    width: 100%;
+    z-index: 2;
+    font-size: 16px;
+
+    & :focus {
+      border: 1px solid $light;
+    }
+
+    &--validator {
+      border: 1px solid red;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__validator {
+    height: 20px;
+    color: red;
+  }
+
+  &__svg {
+    position: absolute;
+    right: 10px;
+  }
+
+  &__button {
+    margin-left: 15px;
+    border: 2px solid $secondary;
+    background-color: white;
+    border-radius: 7px;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    font-weight: 600;
+    color: $secondary;
+  }
+
+  &__icons {
+    position: relative;
+  }
+}

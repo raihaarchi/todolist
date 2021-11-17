@@ -1,0 +1,89 @@
+@import '../../../styles/typography.scss';
+@import '../../../styles/breakpoint';
+
+.Modal-setting {
+  background-color: $lightDisabled;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px 20px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    width: initial;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+  &__button {
+    border-radius: 0;
+    margin: 0 0 40px;
+  }
+  &__icon--animation {
+    &-exit-active {
+      animation: category 800ms ease-out forwards;
+    }
+    &-enter-active {
+      animation: category 800ms ease-in alternate-reverse;
+    }
+  }
+  &__name-icon {
+    margin-top: 10px;
+    color: gray;
+  }
+  &__category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__reduct {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    width: 500px;
+  }
+  &__form {
+    display: flex;
+  }
+  &__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 0;
+    &:hover {
+      background-color: #a5c0d0;
+    }
+    &--next {
+      right: 0;
+    }
+    &--prev {
+      left: 0;
+    }
+  }
+}
+
+@keyframes category {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: .7;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}

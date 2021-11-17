@@ -1,0 +1,42 @@
+@import '../../styles/typography.scss';
+@import '../../styles/breakpoint.scss';
+
+.Sorting {
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background-color .5s linear;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+
+  &__content-left {
+    width: 100%;
+    display: flex;
+  }
+
+  &:hover {
+    background-color: $bgLight;
+  }
+
+  &__checkbox {
+    margin: 0 10px;
+  }
+
+  &__heading {
+    width: 110px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 0 20px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      margin: 20px 20px;
+    }
+  }
+}

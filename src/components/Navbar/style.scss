@@ -1,0 +1,62 @@
+@import '../../styles/typography.scss';
+@import '../../styles/breakpoint.scss';
+
+.Navbar {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0 5px;
+
+  &__link {
+    margin-right: 8px;
+    border: 1px solid $light;
+    padding: 10px 18px;
+    border-radius: 7px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      margin: 7px 7px;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    &--primary {
+      background-color: $primaryDisabled;
+      color: white;
+
+      &:focus,
+      &:hover {
+        background-color: $primary;
+      }
+
+      &--active {
+        background-color: $primary;
+        color: white;
+
+        &:focus,
+        &:hover &:visited {
+          background-color: $primaryDisabled;
+        }
+      }
+    }
+
+    &--secondary {
+      background-color: $secondary;
+      color: black;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $secondaryDisabled;
+      }
+
+      &--active {
+        background-color: $secondaryDisabled;
+        color: black;
+
+        &:hover &:focus &:visited {
+          background-color: $secondary;
+        }
+      }
+    }
+  }
+}

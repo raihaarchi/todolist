@@ -1,0 +1,23 @@
+@import '../../../styles/breakpoint';
+
+.icons {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.Form-task-icons {
+  display: flex;
+  width: 500px;
+  padding: 14px;
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 90%;
+  }
+}

@@ -1,0 +1,166 @@
+@import '../../styles/typography.scss';
+
+.Task {
+  border: 1px solid $light;
+  box-shadow: 0 0 10px $light;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__modal-task {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+  &__content-top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    position: relative;
+    width: 30px;
+    height: auto;
+  }
+
+  &__delete-button {
+    display: flex;
+    align-items: center;
+    color: $danger;
+  }
+
+  &__content-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: $light;
+  }
+
+  &__content-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 10px;
+  }
+
+  &--not-favorite {
+    display: flex;
+    align-items: center;
+    color: $light;
+    transition: color .5s linear;
+
+    .icon-star {
+      margin-right: 22px;
+      width: 40px;
+      height: 37px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__edit {
+    margin: 12px 5px;
+    width: max-content;
+  }
+
+  &__text {
+    word-break: break-all;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &--completed {
+      color: $light;
+      text-decoration: line-through;
+    }
+  }
+
+  &__icon-button--sm {
+    margin-right: 15px;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+.checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+  height: auto;
+}
+.checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $light;
+  border-radius: 0.25em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.checkbox:checked+label::before {
+  border-color: $blue;
+  background-color: $blue;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.redact {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: $secondary
+}
+
+.redact-text {
+  display: none;
+}
+
+.redact:hover .redact-text {
+  display: block;
+  margin-right: 14px;
+  animation: redact 400ms reverse;
+}
+
+@keyframes redact {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: .3;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(170px);
+  }
+}

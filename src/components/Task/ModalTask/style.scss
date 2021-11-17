@@ -1,0 +1,33 @@
+@import '../../../styles/typography.scss';
+
+.Modal-task {
+  background-color: $bgLight;
+  padding: 20px 50px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+
+  &__content-top {
+    display: flex;
+  }
+
+  &__close {
+    z-index: 3;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 4px;
+    margin: 0;
+    margin-right: 20px;
+    border: 0;
+    height: 30px;
+    border: 1px double $light;
+    border-radius: 4px;
+    font-size: $fontSizeMedium;
+  }
+
+  &__button-save {
+    margin-top: 20px;
+  }
+}

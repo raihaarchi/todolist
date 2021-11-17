@@ -1,0 +1,28 @@
+@import '../styles/typography.scss';
+@import '../styles/breakpoint.scss';
+
+.empty__container {
+  height: 100vh;
+  background-color: $bgLight;
+}
+
+.main {
+  &__container {
+    position: relative;
+    flex-grow: 1;
+  }
+
+  &__sorting {
+    margin: 20px 0;
+  }
+
+  &__form-task {
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-top: 20px;
+    }
+  }
+
+  &__filter, &__setting {
+    position: relative;
+  }
+}
